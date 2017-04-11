@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TRUSTBUY</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="ad_title">Title</string>
+    <string name="ad_title_desc">A good Title is the selling secret!</string>
+    <string name="product_image">Product Image</string>
+    <string name="product_image_browse_button">Browse..</string>
+    <string name="ad_description">Description</string>
+    <string name="ad_publish_button">Publish</string>
+    <string name="ad_cancel_button">Cancel</string>
+        <string name="pwd_success_message">A link has been sent to the registered Email. please use that to Sign In!</string>
+    <string name="pwd_reset_login_btn">Log In</string>
+    <string name="pwd_reset_cancel_btn">CANCEL</string>
+    <string name="pwd_reset_send_btn">Send</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="view_watchlist">View</string>
+    <string-array name="SecurityQuestions">
+        <item>Mothers maiden name?</item>
+        <item>Name of first pet?</item>
+        <item>First type of pet?</item>
+        <item>Best friends name?</item>
+        <item>Name of your first car?</item>
+
+    </string-array>
+
+</resources>

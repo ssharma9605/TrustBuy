@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_margin="16dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+        <SearchView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/searchView2" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Pending Friend Requests"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_below="@+id/searchView2"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:text="Tendulkar,Sachin"
+            android:layout_marginBottom="62dp"
+            android:layout_above="@+id/textView14"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kumar,Sreenath"
+            android:layout_alignBaseline="@+id/button11"
+            android:layout_alignBottom="@+id/button11"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17" />
+
+        <Button
+            android:id="@+id/accept1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:onClick="Accept"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_alignLeft="@+id/button11"
+            android:layout_alignStart="@+id/button11" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block"
+
+            android:layout_alignBaseline="@+id/button11"
+            android:layout_alignBottom="@+id/button11"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+
+            android:layout_above="@+id/accept1"
+            android:layout_toLeftOf="@+id/button14"
+            android:layout_toStartOf="@+id/button14"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block"
+
+            android:layout_alignBaseline="@+id/accept1"
+            android:layout_alignBottom="@+id/accept1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"
+            android:textColor="@android:color/black"
+            android:layout_above="@+id/textView15"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="43dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abraham,John"
+            android:layout_alignBaseline="@+id/button13"
+            android:layout_alignBottom="@+id/button13"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sharma,Sukriti"
+            android:layout_alignBaseline="@+id/button16"
+            android:layout_alignBottom="@+id/button16"
+            android:layout_alignRight="@+id/textView15"
+            android:layout_alignEnd="@+id/textView15" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UnFriend"
+            android:layout_above="@+id/button16"
+            android:layout_alignRight="@+id/accept1"
+            android:layout_alignEnd="@+id/accept1"
+            android:layout_marginBottom="11dp" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block"
+
+            android:layout_alignBaseline="@+id/button13"
+            android:layout_alignBottom="@+id/button13"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block"
+
+            android:layout_alignBaseline="@+id/button16"
+            android:layout_alignBottom="@+id/button16"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UnFriend"
+            android:layout_above="@+id/Unfriend1"
+            android:layout_alignLeft="@+id/button13"
+            android:layout_alignStart="@+id/button13"
+            android:layout_marginBottom="23dp" />
+
+        <Button
+            android:id="@+id/Unfriend1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UnFriend"
+            android:onClick="UnFriend"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/button16"
+            android:layout_alignStart="@+id/button16" />
+
+        <ToggleButton
+            android:id="@+id/Blocked1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button14"
+            android:layout_alignRight="@+id/button14"
+            android:layout_alignTop="@+id/Unfriend1"
+            android:text="BLOCK"
+            android:textOff="UNBLOCK"
+            android:textOn="BLOCK"/>
+         />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kandasamy,MK"
+            android:layout_alignBaseline="@+id/Unfriend1"
+            android:layout_alignBottom="@+id/Unfriend1"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17" />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

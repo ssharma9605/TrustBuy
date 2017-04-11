@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:padding="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/ad_image"
+            android:layout_width="148dp"
+            android:layout_height="146dp"
+            app:srcCompat="@drawable/book"
+            android:background="#0099FF"
+            android:padding="1dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_alignTop="@+id/ad_desc_scroll"
+            android:layout_alignLeft="@+id/ad_title_lbl_1"
+            android:layout_alignStart="@+id/ad_title_lbl_1" />
+
+
+        <TextView
+            android:id="@+id/ad_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sharma, Sukriti"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/ad_title_lbl_1"
+            android:layout_width="341dp"
+            android:layout_height="18dp"
+            android:text="CAD by Ian:Good Condition , Edition 7"
+            android:textStyle="bold"
+            android:textScaleX="1"
+            android:layout_below="@+id/ad_username"
+            android:layout_alignLeft="@+id/ad_username"
+            android:layout_alignStart="@+id/ad_username" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/ad_desc_scroll"
+            android:layout_width="177dp"
+            android:layout_height="261dp"
+            android:layout_below="@+id/ad_title_lbl_1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="39dp">
+
+            <TextView
+                android:id="@+id/ad_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_alignEnd="@+id/ad_title_lbl_1"
+                android:layout_alignRight="@+id/ad_title_lbl_1"
+                android:layout_alignTop="@+id/ad_image"
+                android:text="Mag dichtbij uitkeert centimes ter waardoor inwoners dikwijls. Of puin ik is diep zelf om eens ging erin. Economisch spoorwegen bij sap bergachtig rijkdommen tinhoudend wij. Konden daarna twaalf sap wat sterft aan. Al leelijk de hielden afneemt om nu spleten gezocht. Men omgeving voorziet zes verbruik. Bestaat en noodige ze cultuur nu smelter. Doel veel als vijf goud die.
+
+    Voorzorg lot upasboom het onnoodig wel. Zit perak gif leven wonde toe lange spijt. Wording heb doelang pagoden honderd des dit. Gif treffen luister gedaald planter zou waarmee toe gevoerd. Dus wel bovendien britschen vertoonen beteekent aardschok nog. De verbruik eromheen in in gebouwen boringen millioen minstens.
+
+    In uiterste in te al ernstige gelukken. Bezig was goten sap kan jonge perak. Verren ik nu ze tonnen drukke. Nadat is onder stiet bijna wordt negri ze. Moeite het wie zes europa alleen. Behandeld sultanaat en behoorden schaarsch maleische geraamten er."
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="62dp" />
+        </android.support.v4.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/ad_report_ad"
+                android:layout_width="95dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="ReportAd"
+                tools:layout_editor_absoluteY="622dp"
+                android:onClick="Login"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageButton
+                android:id="@+id/ad_send_mail"
+                android:layout_width="84dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_mail_outline_black_24dp"
+                android:onClick="MessageSeller"
+                android:layout_marginBottom="59dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/ad_add_to_wishlist"
+                android:layout_width="84dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_playlist_add_black_24dp"
+                tools:layout_editor_absoluteY="624dp"
+                android:onClick="Login"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/ad_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignLeft="@+id/ad_report_ad"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/ad_report_ad"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="53dp"
+                android:text="Price: $70" />
+
+            <TextView
+                android:id="@+id/adHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ad_add_to_wishlist"
+                android:layout_alignStart="@+id/ad_add_to_wishlist"
+                android:layout_centerVertical="true"
+                android:text="Ad History?"
+                android:onClick="AdUpdatedHistory"
+                />
+
+            <ZoomButton
+                android:id="@+id/zoomButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="17dp"
+                android:src="@android:drawable/btn_plus"
+                android:layout_below="@+id/ad_item_price"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

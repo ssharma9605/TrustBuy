@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/tblogo"
+        android:layout_weight="0.10" />
+
+    <TextView
+        android:id="@+id/login_email_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/login_pwd_edt_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/login_pwd_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/login_email_edt_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/login_signin_btn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sign In"
+        android:onClick="SignIn"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login_createaccount_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CreateNewAccount"
+        android:text="Create New Account" />
+
+    <Button
+        android:id="@+id/login_cancel_btn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Cancel"
+        android:onClick="Cancel"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/login_forgot_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:text="@string/forgotpassword"
+        android:gravity="center"
+        android:onClick="ForgotPassword"
+        />
+
+
+</LinearLayout>

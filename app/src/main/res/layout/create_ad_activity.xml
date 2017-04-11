@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mk.experiment.ad_layout"
+        >
+
+        <TextView
+            android:id="@+id/ad_title_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_title"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/ad_title_desc"
+            android:layout_width="242dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/ad_title_desc"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_alignBaseline="@+id/ad_title_lbl"
+            android:layout_alignBottom="@+id/ad_title_lbl"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_image"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="103dp"
+            android:layout_alignTop="@+id/ad_img"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/ad_img_browse_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView8"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/price_edt"
+            android:layout_toRightOf="@+id/price_edt"
+            android:text="@string/product_image_browse_button"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="120dp"
+            />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_description"
+            android:layout_alignTop="@+id/editText8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_publish_button"
+            android:layout_below="@+id/editText8"
+            android:layout_toLeftOf="@+id/ad_img_browse_btn"
+            android:layout_toStartOf="@+id/ad_img_browse_btn" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_cancel_button"
+            android:layout_below="@+id/editText8"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="CancelAd"/>
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="242dp"
+            android:layout_height="146dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+
+            android:layout_marginTop="53dp"
+            android:layout_below="@+id/ad_img"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/ad_img"
+            android:layout_width="88dp"
+            android:layout_height="69dp"
+            app:srcCompat="@android:color/darker_gray"
+            tools:layout_editor_absoluteX="-120dp"
+            tools:layout_editor_absoluteY="287dp"
+            android:layout_below="@+id/price_edt"
+            android:layout_alignLeft="@+id/price_edt"
+            android:layout_alignStart="@+id/price_edt"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/price_lbl"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="Price"
+            android:layout_alignTop="@+id/price_edt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/price_edt"
+            android:layout_width="97dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="172dp"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/ad_title_desc"
+            android:layout_alignLeft="@+id/ad_title_desc"
+            android:layout_alignStart="@+id/ad_title_desc" />
+    </RelativeLayout>
+
+</ScrollView>
