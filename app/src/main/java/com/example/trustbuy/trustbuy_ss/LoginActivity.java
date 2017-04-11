@@ -9,7 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
+//this is java file
 public class LoginActivity extends UserAccountsettingsActivity {
 
 
