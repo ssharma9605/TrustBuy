@@ -79,13 +79,14 @@
 
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/ad_publish_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ad_publish_button"
             android:layout_below="@+id/editText8"
             android:layout_toLeftOf="@+id/ad_img_browse_btn"
-            android:layout_toStartOf="@+id/ad_img_browse_btn" />
+            android:layout_toStartOf="@+id/ad_img_browse_btn"
+            android:onClick="Publish"/>
 
         <Button
             android:id="@+id/button6"

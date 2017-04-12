@@ -12,12 +12,12 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 import java.util.List;
 
 
-
-public class Recycler_View_Adapter extends RecyclerView.Adapter<Recycler_View_Adapter.ViewHolder>
-{
+public class Recycler_View_Adapter extends RecyclerView.Adapter<Recycler_View_Adapter.View_Holder> {
 
     private List<RecyclerViewDataActivity> list ,filterList;
     Context context;
@@ -27,26 +27,28 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<Recycler_View_Ad
     public Recycler_View_Adapter(List<RecyclerViewDataActivity> list, Context context) {
         this.list = list;
         this.context = context;
-       // this.filterList = new ArrayList<RecyclerViewDataActivity>();
+        this.filterList = new ArrayList<RecyclerViewDataActivity>();
         // we copy the original list to the filter list and use it for setting row values
         this.filterList.addAll(this.list);
     }
 
+
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public View_Holder onCreateViewHolder(ViewGroup parent, int viewType) {
         //Inflate the layout, initialize the View Holder
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.main_adlayout_activity, parent, false);
-        return new ViewHolder(v);
+        return new View_Holder(v);
 
 
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(View_Holder holder, int position) {
 
         //Use the provided View Holder on the onCreateViewHolder method to populate the current row on the RecyclerView
         RecyclerViewDataActivity listitem = filterList.get(position);
         holder.title.setText(listitem.title);
+        holder.price.setText(listitem.price);
         holder.description.setText(listitem.description);
         holder.imageView.setImageResource(listitem.imageId);
 
@@ -119,16 +121,18 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<Recycler_View_Ad
         }).start();
 
     }
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class View_Holder extends RecyclerView.ViewHolder implements View.OnClickListener{
         CardView cv;
         TextView title;
+        TextView price;
         TextView description;
         ImageView imageView;
 
-        ViewHolder(View itemView) {
+        View_Holder(View itemView) {
             super(itemView);
             cv = (CardView) itemView.findViewById(R.id.card);
             title = (TextView) itemView.findViewById(R.id.title);
+            price = (TextView) itemView.findViewById(R.id.price);
             description = (TextView) itemView.findViewById(R.id.description);
             imageView = (ImageView) itemView.findViewById(R.id.imageView);
             itemView.setOnClickListener(this);
@@ -146,7 +150,6 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<Recycler_View_Ad
                 case 0:
                     intent = new Intent(context, PostedAdscreenActivity.class);
                     break;
-
                 default:
                     intent = new Intent(context, MainActivity.class);
                     break;
@@ -156,7 +159,6 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<Recycler_View_Ad
     }
 
 
-  }
-
+}
 
 

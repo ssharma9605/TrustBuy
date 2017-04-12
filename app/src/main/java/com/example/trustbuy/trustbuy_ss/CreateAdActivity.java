@@ -42,7 +42,14 @@ public class CreateAdActivity extends MenubarActivity {
                     currentImage = MediaStore.Images.Media.getBitmap(this.getContentResolver(), photoUri);
                     selectedImage.setImageBitmap(currentImage);
                 } catch (Exception e) {
-                    e.printStackTrace();
+                   // e.printStackTrace();
+                    if (currentImage != null) {
+                        currentImage.recycle();
+                        currentImage = null;
+                        System.gc();
+
+                    }
+
                 }
             }
         }
@@ -50,5 +57,9 @@ public class CreateAdActivity extends MenubarActivity {
 
     public void CancelAd(View view) {
         finish();
+    }
+    public void Publish(View view){
+        Intent intent = new Intent(this, PostedAdscreenActivity.class);
+        startActivity(intent);
     }
 }

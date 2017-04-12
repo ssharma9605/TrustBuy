@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     tools:layout_editor_absoluteY="97dp"
     tools:layout_editor_absoluteX="16dp">
 
@@ -144,10 +145,10 @@
         android:inputType="textPostalAddress"
         tools:layout_editor_absoluteY="229dp"
         tools:layout_editor_absoluteX="143dp"
+        android:layout_marginTop="16dp"
         android:layout_below="@+id/user_province_edt_lbl"
         android:layout_alignLeft="@+id/button10"
-        android:layout_alignStart="@+id/button10"
-        android:layout_marginTop="16dp" />
+        android:layout_alignStart="@+id/button10" />
 
     <EditText
         android:id="@+id/user_province_edt_lbl"
@@ -222,5 +223,16 @@
         android:layout_alignRight="@+id/update_accountsettings"
         android:layout_alignEnd="@+id/update_accountsettings" />
 
-
+    <android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_delete"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_below="@+id/acc_cancel_btn"
+        android:layout_alignRight="@+id/acc_cancel_btn"
+        android:layout_alignEnd="@+id/acc_cancel_btn" />
 </RelativeLayout>
