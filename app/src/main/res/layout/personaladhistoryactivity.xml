@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Bought a chair from Rajani few months ago.My best buy so far."
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_alignStart="@+id/ratingBar"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/postedad"
+        android:layout_alignStart="@+id/postedad" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/postedAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posted Ads"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="37dp" />
+
+    <ImageView
+        android:id="@+id/postedad"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="image"
+        android:background="#ccc"
+        android:padding="2dp"
+        android:src="@drawable/bicycle"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/textView11"
+        android:layout_alignLeft="@+id/postedAd"
+        android:layout_alignStart="@+id/postedAd" />
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Hi there, looking to sell my bicycle. Fine condition.sale price:30 dollars"
+        android:layout_alignTop="@+id/postedad"
+        android:layout_toRightOf="@+id/postedad"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp" />
+
+    <TextView
+        android:id="@+id/ad_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bicycle For Sale"
+        android:layout_above="@+id/postedad"
+        android:layout_alignLeft="@+id/postedAd"
+        android:layout_alignStart="@+id/postedAd"
+        android:layout_marginBottom="11dp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+</RelativeLayout>

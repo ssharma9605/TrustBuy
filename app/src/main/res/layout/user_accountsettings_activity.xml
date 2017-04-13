@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
+
     tools:layout_editor_absoluteY="97dp"
     tools:layout_editor_absoluteX="16dp">
 
@@ -18,48 +18,20 @@
 
         tools:layout_editor_absoluteY="35dp"
         tools:layout_editor_absoluteX="93dp"
-        android:layout_alignTop="@+id/user_fname_edt_lbl"
-        android:layout_alignRight="@+id/user_lname"
-        android:layout_alignEnd="@+id/user_lname" />
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/user_lname"
+        android:layout_alignStart="@+id/user_lname" />
 
     <TextView
         android:id="@+id/user_lname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Last Name"
-        tools:layout_editor_absoluteY="72dp"
-        tools:layout_editor_absoluteX="93dp"
-        android:layout_alignBaseline="@+id/user_lname_edt_lbl"
-        android:layout_alignBottom="@+id/user_lname_edt_lbl"
-        android:layout_alignLeft="@+id/user_province_ed_lbl"
-        android:layout_alignStart="@+id/user_province_ed_lbl" />
 
-    <EditText
-        android:id="@+id/user_fname_edt_lbl"
-        android:layout_width="158dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Sukriti"
-        tools:layout_editor_absoluteY="58dp"
-        tools:layout_editor_absoluteX="186dp"
-        android:layout_above="@+id/user_lname_edt_lbl"
-        android:layout_alignRight="@+id/user_lname_edt_lbl"
-        android:layout_alignEnd="@+id/user_lname_edt_lbl" />
-
-    <EditText
-        android:id="@+id/user_lname_edt_lbl"
-        android:layout_width="157dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Sharma"
-        tools:layout_editor_absoluteY="59dp"
-        tools:layout_editor_absoluteX="179dp"
-        android:layout_above="@+id/user_username"
-        android:layout_alignRight="@+id/acc_cancel_btn"
-        android:layout_alignEnd="@+id/acc_cancel_btn"
-        android:layout_marginBottom="46dp" />
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toRightOf="@+id/user_username_lbl"
+        android:layout_toEndOf="@+id/user_username_lbl" />
 
     <TextView
         android:id="@+id/user_username_lbl"
@@ -68,51 +40,39 @@
         android:text="UserName"
         tools:layout_editor_absoluteY="149dp"
         tools:layout_editor_absoluteX="31dp"
-        android:layout_above="@+id/user_acc_email_edt_lbl"
+        android:layout_alignBaseline="@+id/user_username"
+        android:layout_alignBottom="@+id/user_username"
         android:layout_alignLeft="@+id/user_acc_email_lbl"
-        android:layout_alignStart="@+id/user_acc_email_lbl"
-        android:layout_marginBottom="33dp" />
+        android:layout_alignStart="@+id/user_acc_email_lbl" />
 
-    <TextView
-        android:id="@+id/user_username"
-        android:layout_width="202dp"
-        android:layout_height="30dp"
-        android:text="ssharma9605"
-        tools:layout_editor_absoluteY="149dp"
-        tools:layout_editor_absoluteX="142dp"
-        android:layout_alignBaseline="@+id/user_username_lbl"
-        android:layout_alignBottom="@+id/user_username_lbl"
-        android:layout_alignRight="@+id/user_province_ed_lbl"
-        android:layout_alignEnd="@+id/user_province_ed_lbl" />
-
-    <Button
-        android:id="@+id/update_accountsettings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Update"
-        tools:layout_editor_absoluteY="322dp"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_alignBaseline="@+id/acc_cancel_btn"
-        android:layout_alignBottom="@+id/acc_cancel_btn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="23dp"
-        android:layout_marginStart="23dp"
-        android:onClick="UpdateAccount"/>
-
-    <Button
-        android:id="@+id/acc_cancel_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cancel"
-        tools:layout_editor_absoluteY="322dp"
-        tools:layout_editor_absoluteX="256dp"
-        android:layout_alignTop="@+id/button10"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="15dp"
-        android:layout_marginEnd="15dp"
-        android:onClick="CancelUpdate"/>
+    <!--<Button-->
+        <!--android:id="@+id/update_accountsettings"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Update"-->
+        <!--tools:layout_editor_absoluteY="322dp"-->
+        <!--tools:layout_editor_absoluteX="16dp"-->
+        <!--android:layout_alignBaseline="@+id/acc_cancel_btn"-->
+        <!--android:layout_alignBottom="@+id/acc_cancel_btn"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginLeft="23dp"-->
+        <!--android:layout_marginStart="23dp"-->
+        <!--android:onClick="UpdateAccount"/>-->
+<!---->
+    <!--<Button-->
+        <!--android:id="@+id/acc_cancel_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Cancel"-->
+        <!--tools:layout_editor_absoluteY="322dp"-->
+        <!--tools:layout_editor_absoluteX="256dp"-->
+        <!--android:layout_alignTop="@+id/button10"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_marginEnd="15dp"-->
+        <!--android:onClick="CancelUpdate"/>-->
 
     <TextView
         android:id="@+id/user_acc_email_lbl"
@@ -122,7 +82,7 @@
         tools:layout_editor_absoluteY="191dp"
         tools:layout_editor_absoluteX="31dp"
         android:textSize="20dp"
-        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/user_acc_email_edt_lbl"
         android:layout_alignLeft="@+id/user_province"
         android:layout_alignStart="@+id/user_province" />
 
@@ -133,9 +93,11 @@
         android:text="Province"
         tools:layout_editor_absoluteY="243dp"
         tools:layout_editor_absoluteX="31dp"
-        android:layout_alignBottom="@+id/user_province_edt_lbl"
-        android:layout_alignLeft="@+id/user_postal_code"
-        android:layout_alignStart="@+id/user_postal_code" />
+        android:layout_alignTop="@+id/user_province_edt_lbl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp" />
 
     <EditText
         android:id="@+id/user_province_ed_lbl"
@@ -145,10 +107,22 @@
         android:inputType="textPostalAddress"
         tools:layout_editor_absoluteY="229dp"
         tools:layout_editor_absoluteX="143dp"
-        android:layout_marginTop="16dp"
-        android:layout_below="@+id/user_province_edt_lbl"
-        android:layout_alignLeft="@+id/button10"
-        android:layout_alignStart="@+id/button10" />
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/coordinatorLayout"
+        android:layout_alignRight="@+id/user_username"
+        android:layout_alignEnd="@+id/user_username" />
+
+    <EditText
+        android:id="@+id/user_fname_edt_lbl"
+        android:layout_width="196dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Sukriti"
+        android:layout_alignBaseline="@+id/user_fname"
+        android:layout_alignBottom="@+id/user_fname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:id="@+id/user_province_edt_lbl"
@@ -159,10 +133,34 @@
 
         tools:layout_editor_absoluteY="-26dp"
         tools:layout_editor_absoluteX="291dp"
-        android:layout_below="@+id/user_acc_email_edt_lbl"
-        android:layout_alignLeft="@+id/user_acc_email_edt_lbl"
-        android:layout_alignStart="@+id/user_acc_email_edt_lbl"
-        android:layout_marginTop="23dp" />
+
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/user_province_ed_lbl"
+        android:layout_alignLeft="@+id/user_province_ed_lbl"
+        android:layout_alignStart="@+id/user_province_ed_lbl" />
+
+    <TextView
+        android:id="@+id/user_username"
+        android:layout_width="202dp"
+        android:layout_height="30dp"
+        android:text="ssharma9605"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="149dp"
+
+
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/user_acc_email_edt_lbl"
+        android:layout_toRightOf="@+id/user_lname"
+        android:layout_toEndOf="@+id/user_lname" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/idcard"
+        android:layout_alignTop="@+id/user_fname"
+        android:layout_alignRight="@+id/user_province"
+        android:layout_alignEnd="@+id/user_province" />
 
     <TextView
         android:id="@+id/user_postal_code"
@@ -172,10 +170,25 @@
 
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="31dp"
-        android:layout_alignBaseline="@+id/user_province_ed_lbl"
         android:layout_alignBottom="@+id/user_province_ed_lbl"
-        android:layout_alignLeft="@+id/update_accountsettings"
-        android:layout_alignStart="@+id/update_accountsettings" />
+        android:layout_alignLeft="@+id/user_province"
+        android:layout_alignStart="@+id/user_province" />
+
+    <EditText
+        android:id="@+id/user_lname_edt_lbl"
+        android:layout_width="196dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Sharma"
+
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="59dp"
+
+        android:layout_alignBaseline="@+id/user_lname"
+        android:layout_alignBottom="@+id/user_lname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:id="@+id/user_acc_email_edt_lbl"
@@ -190,49 +203,83 @@
         android:layout_alignLeft="@+id/user_username"
         android:layout_alignStart="@+id/user_username" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="125dp"
-        android:layout_height="48dp"
-        android:text="Change Password"
-        tools:layout_editor_absoluteY="322dp"
-        tools:layout_editor_absoluteX="114dp"
-        android:layout_marginBottom="10dp"
-        android:layout_above="@+id/button12"
-        android:layout_centerHorizontal="true"
-        android:onClick="ChangePassword"/>
+    <!--<Button-->
+        <!--android:id="@+id/button10"-->
+        <!--android:layout_width="125dp"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:text="Change Password"-->
+        <!--tools:layout_editor_absoluteY="322dp"-->
+        <!--tools:layout_editor_absoluteX="114dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_above="@+id/button12"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:onClick="ChangePassword"/>-->
 
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="294dp"
-        android:layout_height="44dp"
-        android:text="Delete Account"
-        tools:layout_editor_absoluteY="388dp"
-        tools:layout_editor_absoluteX="29dp"
-        android:layout_marginBottom="12dp"
+    <!--<Button-->
+        <!--android:id="@+id/button12"-->
+        <!--android:layout_width="294dp"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:text="Delete Account"-->
+        <!--tools:layout_editor_absoluteY="388dp"-->
+        <!--tools:layout_editor_absoluteX="29dp"-->
+        <!--android:layout_marginBottom="12dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        tools:context="com.example.sukriti.fabbar.MainActivity"
+
+
+        android:id="@+id/coordinatorLayout"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_toRightOf="@+id/user_province_edt_lbl"
+        android:layout_toEndOf="@+id/user_province_edt_lbl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/idcard"
-        android:layout_toStartOf="@+id/user_username"
-        android:layout_above="@+id/user_lname"
-        android:layout_alignRight="@+id/update_accountsettings"
-        android:layout_alignEnd="@+id/update_accountsettings" />
 
-    <android.support.design.widget.FloatingActionButton
-    android:id="@+id/fab"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="bottom|end"
-        android:src="@android:drawable/ic_delete"
-        app:layout_anchorGravity="bottom|right|end"
-        android:layout_marginRight="17dp"
-        android:layout_marginEnd="17dp"
-        android:layout_below="@+id/acc_cancel_btn"
-        android:layout_alignRight="@+id/acc_cancel_btn"
-        android:layout_alignEnd="@+id/acc_cancel_btn" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_delete_forever_black_24dp"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorFAB2"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            app:pressedTranslationZ="12dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_create_black_24dp"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorFAB1"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_rate_review_black_24dp"
+            app:backgroundTint="@color/colorAccent"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
 </RelativeLayout>

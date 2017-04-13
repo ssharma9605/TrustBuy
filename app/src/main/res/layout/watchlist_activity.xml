@@ -61,7 +61,8 @@
         android:layout_marginBottom="15dp"
         android:layout_alignBottom="@+id/imageView7"
         android:layout_alignLeft="@+id/watchlist_view_btn"
-        android:layout_alignStart="@+id/watchlist_view_btn" />
+        android:layout_alignStart="@+id/watchlist_view_btn"
+        android:onClick="ViewAd"/>
 
     <Button
         android:id="@+id/button6"
@@ -70,7 +71,8 @@
         android:layout_alignLeft="@+id/button4"
         android:layout_alignStart="@+id/button4"
         android:layout_alignTop="@+id/button5"
-        android:text="@string/delete" />
+        android:text="@string/delete"
+        android:onClick="Delete"/>
 
 
 </RelativeLayout>

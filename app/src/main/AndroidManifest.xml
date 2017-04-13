@@ -43,6 +43,10 @@
         <activity android:name=".AdUpdatedHistoryactivity">
 
 </activity>
+        <activity android:name=".InboxActivity"/>
+<activity android:name=".InboxMsgDisplayActivity"/>
+        <activity android:name=".PersonalAdHistoryActivity"/>
+        <activity android:name=".ReportAdActivity"/>
     </application>
 
 </manifest>

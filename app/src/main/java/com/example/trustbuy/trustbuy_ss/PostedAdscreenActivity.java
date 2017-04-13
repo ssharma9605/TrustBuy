@@ -30,6 +30,10 @@ public class PostedAdscreenActivity extends MainActivity {
         Intent intent = new Intent(this, AdUpdatedHistoryactivity.class);
         startActivity(intent);
     }
+    public void Report (View view) {
+        Intent intent = new Intent(this, ReportAdActivity.class);
+        startActivity(intent);
+    }
 
 
 }

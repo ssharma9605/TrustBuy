@@ -15,13 +15,26 @@
     <string name="delete">Delete</string>
     <string name="cancel">Cancel</string>
     <string name="view_watchlist">View</string>
+    <string-array name="spinnerItems">
+        <item>Scam/prohibited</item>
+        <item>Spam</item>
+        <item>duplicate</item>
+        <item>miscategorised</item>
+        <item>other</item>
+    </string-array>
     <string-array name="SecurityQuestions">
         <item>Mothers maiden name?</item>
         <item>Name of first pet?</item>
         <item>First type of pet?</item>
         <item>Best friends name?</item>
         <item>Name of your first car?</item>
-
+         </string-array>
+    <string-array name="list_messages">
+        <item>JSmith: HTML and CSS txtbook.Hi! Is it..</item>
+        <item>Mmathew:Interested in laptop;Hi there!..</item>
+        <item>Mkumar:Purchase bicycle.Hello;When can..</item>
+        <item>Ssharma: Murach C# textbook.Best available..</item>
+        <item>EAbraham:Study Desk.Hi there!..</item>
     </string-array>
 
 </resources>

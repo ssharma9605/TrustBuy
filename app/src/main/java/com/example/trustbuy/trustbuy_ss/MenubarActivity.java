@@ -36,7 +36,7 @@ public class MenubarActivity extends AppCompatActivity {
             case R.id.action_UserInbox:
                 Toast.makeText(this, "Inbox", Toast.LENGTH_SHORT)
                         .show();
-                i = new Intent(getApplicationContext(), MainActivity.class);
+                i = new Intent(getApplicationContext(), InboxActivity.class);
                 startActivity(i);
                 break;
             case R.id.action_createad:
@@ -67,7 +67,7 @@ public class MenubarActivity extends AppCompatActivity {
             case R.id.action_history:
                 Toast.makeText(this, "History", Toast.LENGTH_SHORT)
                         .show();
-                i = new Intent(getApplicationContext(), PostedAdscreenActivity.class);
+                i = new Intent(getApplicationContext(), PersonalAdHistoryActivity.class);
                 startActivity(i);
                 break;
             default:

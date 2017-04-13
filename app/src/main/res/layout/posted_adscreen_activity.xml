@@ -93,7 +93,7 @@
                 android:layout_weight="1"
                 android:text="ReportAd"
                 tools:layout_editor_absoluteY="622dp"
-                android:onClick="Login"
+                android:onClick="Report"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />

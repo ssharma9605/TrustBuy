@@ -20,8 +20,7 @@ public class ForgotPasswordActivity extends LoginActivity {
         startActivity(intent);
     }
     public void CancelPwdchange(View view) {
-        Intent intent = new Intent(this, PostedAdscreenActivity.class);
-        startActivity(intent);
+        finish();
     }
 }
 
