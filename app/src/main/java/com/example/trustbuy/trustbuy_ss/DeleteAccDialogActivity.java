@@ -16,7 +16,7 @@ public class DeleteAccDialogActivity extends UserAccountsettingsActivity{
         setContentView(R.layout.delete_acc_cofirmdialog_activity);
     }
     public void Delete(View view){
-        Toast.makeText(this, "Deleted", Toast.LENGTH_SHORT)
+        Toast.makeText(this, "Create a new account to sell your Product!", Toast.LENGTH_SHORT)
                 .show();
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);

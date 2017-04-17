@@ -3,12 +3,13 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="true"
-    android:padding="5dp">
+    android:padding="5dp"
+    >
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
 
@@ -16,9 +17,9 @@
             android:id="@+id/ad_image"
             android:layout_width="148dp"
             android:layout_height="146dp"
-            app:srcCompat="@drawable/book"
-            android:background="#0099FF"
-            android:padding="1dp"
+            app:srcCompat="@drawable/murach"
+            android:background="#000"
+            android:padding="2dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             android:layout_alignTop="@+id/ad_desc_scroll"
@@ -43,8 +44,9 @@
             android:id="@+id/ad_title_lbl_1"
             android:layout_width="341dp"
             android:layout_height="18dp"
-            android:text="CAD by Ian:Good Condition , Edition 7"
+            android:text="Murach PHPMySQL Textbook on Sale"
             android:textStyle="bold"
+            android:textColor="#0033cc"
             android:textScaleX="1"
             android:layout_below="@+id/ad_username"
             android:layout_alignLeft="@+id/ad_username"
@@ -57,7 +59,8 @@
             android:layout_below="@+id/ad_title_lbl_1"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="39dp">
+            android:layout_marginTop="39dp"
+            android:layout_toLeftOf="@+id/imageView">
 
             <TextView
                 android:id="@+id/ad_desc"
@@ -83,7 +86,8 @@
             android:padding="6dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
 
             <Button
                 android:id="@+id/ad_report_ad"
@@ -105,9 +109,13 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/ic_mail_outline_black_24dp"
                 android:onClick="MessageSeller"
-                android:layout_marginBottom="59dp"
+
+                android:tint="#424242"
                 android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_toLeftOf="@+id/ad_add_to_wishlist"
+                android:layout_toStartOf="@+id/ad_report_ad"
+                android:layout_marginRight="34dp"
+                android:layout_marginEnd="34dp" />
 
             <ImageButton
                 android:id="@+id/ad_add_to_wishlist"
@@ -123,33 +131,36 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/ad_item_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_alignLeft="@+id/ad_report_ad"
-                android:layout_alignParentTop="true"
-                android:layout_alignStart="@+id/ad_report_ad"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="53dp"
-                android:text="Price: $70" />
+android:textStyle="bold"
+                android:layout_marginRight="11dp"
+                android:text="Price: $20"
+                android:textColor="#0033cc"
+                android:layout_below="@+id/ad_title_lbl_1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp" />
 
             <TextView
                 android:id="@+id/adHistory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/ad_add_to_wishlist"
-                android:layout_alignStart="@+id/ad_add_to_wishlist"
-                android:layout_centerVertical="true"
                 android:text="Ad History?"
+                android:textColor="#FF00"
                 android:onClick="AdUpdatedHistory"
-                />
+                android:layout_marginLeft="36dp"
+                android:layout_marginStart="36dp"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/ad_image"
+                android:layout_alignStart="@+id/ad_image" />
 
 
-        </RelativeLayout>
+
 
     </RelativeLayout>
 </ScrollView>

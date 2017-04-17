@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout
+
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:layout_margin="16dp">
 
@@ -36,7 +39,7 @@
         android:isIndicator="true"
         android:scaleX=".6"
         android:scaleY=".4"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="17dp"
         android:layout_below="@+id/textView11"
         android:layout_toRightOf="@+id/ad_title"
         android:layout_toEndOf="@+id/ad_title" />
@@ -95,18 +98,24 @@
         android:layout_height="wrap_content"
         android:scaleX=".6"
         android:scaleY=".4"
-        android:layout_alignBottom="@+id/postedAd"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="18dp" />
+        android:rating="4"
+        android:stepSize="0.5"
+        android:isIndicator="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/lbl_overall_rating"
+        android:layout_toEndOf="@+id/lbl_overall_rating" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/lbl_overall_rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView16"
-        android:layout_alignStart="@+id/textView16"
-        android:layout_alignTop="@+id/ratingBar2"
-        android:text="TextView" />
+        android:text="Overall Rating"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/ratingBar2"
+        android:layout_alignLeft="@+id/postedAd"
+        android:layout_alignStart="@+id/postedAd"
+        android:layout_marginBottom="19dp"
+        />
 
 </RelativeLayout>
+</ScrollView>

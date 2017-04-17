@@ -8,7 +8,8 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
 
         <Button
             android:id="@+id/create_acc_cancel_btn"
@@ -63,7 +64,7 @@
             android:layout_height="wrap_content"
             android:text="Last name"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="8dp"
+
             android:layout_marginLeft="16dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBaseline_toBaselineOf="@+id/lname_editText8" />
@@ -74,7 +75,7 @@
             android:layout_height="wrap_content"
             android:text="UserName"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="8dp"
+
             android:layout_marginLeft="16dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBaseline_toBaselineOf="@+id/username_editText3" />
@@ -130,6 +131,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:ems="10"
+            android:layout_marginTop="5dp"
             android:inputType="textPersonName"
             tools:layout_editor_absoluteY="116dp"
             app:layout_constraintLeft_toRightOf="@+id/fname"
@@ -190,7 +192,8 @@
             android:layout_marginRight="8dp"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginLeft="8dp"
-            app:layout_constraintLeft_toLeftOf="parent" />
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_weight="0.10"/>
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

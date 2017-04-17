@@ -1,226 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="false"
+    >
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-android:layout_margin="16dp"
-    tools:layout_editor_absoluteY="97dp"
-    tools:layout_editor_absoluteX="16dp">
-
-
-    <TextView
-        android:id="@+id/user_fname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="First Name"
-
-        tools:layout_editor_absoluteY="35dp"
-        tools:layout_editor_absoluteX="93dp"
-        android:layout_marginTop="41dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/user_lname"
-        android:layout_alignStart="@+id/user_lname" />
-
-    <TextView
-        android:id="@+id/user_lname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Last Name"
-
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_toRightOf="@+id/imageView2"
-        android:layout_toEndOf="@+id/imageView2" />
-
-    <TextView
-        android:id="@+id/user_username_lbl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="UserName"
-        tools:layout_editor_absoluteY="149dp"
-        tools:layout_editor_absoluteX="31dp"
-        android:layout_alignBaseline="@+id/user_username"
-        android:layout_alignBottom="@+id/user_username"
-        android:layout_alignLeft="@+id/user_acc_email_lbl"
-        android:layout_alignStart="@+id/user_acc_email_lbl" />
-
-    <TextView
-        android:id="@+id/user_acc_email_lbl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        tools:layout_editor_absoluteY="191dp"
-        tools:layout_editor_absoluteX="31dp"
-
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/user_postal_code"
-        android:layout_alignStart="@+id/user_postal_code" />
-
-    <TextView
-        android:id="@+id/user_province"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Province"
-        tools:layout_editor_absoluteY="243dp"
-        tools:layout_editor_absoluteX="31dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="37dp"
-        android:layout_below="@+id/user_postal_code"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:id="@+id/user_province_ed_lbl"
-        android:layout_width="200dp"
-        android:layout_height="32dp"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-        tools:layout_editor_absoluteY="229dp"
-        tools:layout_editor_absoluteX="143dp"
-
-        android:layout_alignBottom="@+id/user_postal_code"
-        android:layout_toRightOf="@+id/user_fname"
-        android:layout_toEndOf="@+id/user_fname" />
-
-    <EditText
-        android:id="@+id/user_fname_edt_lbl"
-        android:layout_width="196dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Sukriti"
-        android:layout_alignBaseline="@+id/user_fname"
-        android:layout_alignBottom="@+id/user_fname"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:id="@+id/user_province_edt_lbl"
-        android:layout_width="53dp"
-        android:layout_height="25dp"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-
-        tools:layout_editor_absoluteY="-26dp"
-        tools:layout_editor_absoluteX="291dp"
-
-        android:layout_alignTop="@+id/user_province"
-        android:layout_alignLeft="@+id/user_acc_email_edt_lbl"
-        android:layout_alignStart="@+id/user_acc_email_edt_lbl" />
-
-    <TextView
-        android:id="@+id/user_username"
-        android:layout_width="202dp"
-        android:layout_height="30dp"
-        android:text="ssharma9605"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="149dp"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+       >
 
 
-        android:layout_marginBottom="29dp"
-        android:layout_above="@+id/user_acc_email_edt_lbl"
-        android:layout_toRightOf="@+id/user_lname"
-        android:layout_toEndOf="@+id/user_lname" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/idcard"
-        android:layout_alignTop="@+id/user_fname"
-        android:layout_alignRight="@+id/user_province"
-        android:layout_alignEnd="@+id/user_province" />
-
-    <TextView
-        android:id="@+id/user_postal_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Postal Code"
-
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="31dp"
-        android:layout_marginTop="40dp"
-        android:layout_below="@+id/user_acc_email_edt_lbl"
-        android:layout_alignLeft="@+id/user_province"
-        android:layout_alignStart="@+id/user_province" />
-
-    <EditText
-        android:id="@+id/user_lname_edt_lbl"
-        android:layout_width="196dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Sharma"
-
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="59dp"
-
-        android:layout_alignBaseline="@+id/user_lname"
-        android:layout_alignBottom="@+id/user_lname"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:id="@+id/user_acc_email_edt_lbl"
-        android:layout_width="196dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-
-        tools:layout_editor_absoluteY="-13dp"
-        tools:layout_editor_absoluteX="140dp"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/user_username"
-        android:layout_alignStart="@+id/user_username" />
-
-    <com.sa90.materialarcmenu.ArcMenu
-        android:id="@+id/Fab_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu_color="#0fb33d"
-        app:menu_open="arc_right"
-        app:menu_scr="@drawable/ic_settings_black_24dp"
-        >
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab_item_delete"
+        <TextView
+            android:id="@+id/user_fname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_delete"
-            app:backgroundTint="#0fb33d"
-            />
-        <LinearLayout
+            android:layout_alignLeft="@+id/user_lname"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/user_lname"
+            android:layout_marginTop="41dp"
+            android:text="First Name"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="35dp" />
+
+        <TextView
+            android:id="@+id/user_lname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical">
-            <TextView
-                android:text="Change Password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            android:layout_alignBottom="@+id/imageView2"
 
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fab_item_change_password"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="Last Name" />
+
+        <TextView
+            android:id="@+id/user_username_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/user_username"
+            android:layout_alignBottom="@+id/user_username"
+            android:layout_alignLeft="@+id/user_acc_email_lbl"
+            android:layout_alignStart="@+id/user_acc_email_lbl"
+            android:text="UserName"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="149dp" />
+
+        <TextView
+            android:id="@+id/user_acc_email_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_postal_code"
+            android:layout_alignStart="@+id/user_postal_code"
+            android:layout_centerVertical="true"
+
+            android:text="Email"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="191dp" />
+
+        <TextView
+            android:id="@+id/user_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/user_postal_code"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="37dp"
+            android:text="Province"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="243dp" />
+
+        <EditText
+            android:id="@+id/user_province_ed_lbl"
+            android:layout_width="196dp"
+            android:layout_height="41dp"
+            android:layout_alignBottom="@+id/user_postal_code"
+            android:layout_toEndOf="@+id/user_fname"
+            android:layout_toRightOf="@+id/user_fname"
+            android:ems="10"
+
+            android:inputType="textPostalAddress"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+        <EditText
+            android:id="@+id/user_fname_edt_lbl"
+            android:layout_width="196dp"
+            android:layout_height="41dp"
+            android:layout_alignBaseline="@+id/user_fname"
+            android:layout_alignBottom="@+id/user_fname"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Sukriti" />
+
+        <EditText
+            android:id="@+id/user_province_edt_lbl"
+            android:layout_width="53dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/user_acc_email_edt_lbl"
+            android:layout_alignStart="@+id/user_acc_email_edt_lbl"
+
+            android:layout_alignTop="@+id/user_province"
+            android:ems="10"
+
+            android:inputType="textPostalAddress"
+            tools:layout_editor_absoluteX="291dp"
+            tools:layout_editor_absoluteY="-26dp" />
+
+        <TextView
+            android:id="@+id/user_username"
+            android:layout_width="202dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/user_acc_email_edt_lbl"
+            android:layout_marginBottom="29dp"
+            android:layout_toEndOf="@+id/user_lname"
+            android:layout_toRightOf="@+id/user_lname"
+            android:text="ssharma9605"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="149dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignEnd="@+id/user_province"
+            android:layout_alignRight="@+id/user_province"
+            android:layout_alignTop="@+id/user_fname"
+            android:src="@drawable/idcard" />
+
+        <TextView
+            android:id="@+id/user_postal_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_province"
+
+            android:layout_alignStart="@+id/user_province"
+            android:layout_below="@+id/user_acc_email_edt_lbl"
+            android:layout_marginTop="40dp"
+            android:text="Postal Code"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/user_lname_edt_lbl"
+            android:layout_width="196dp"
+            android:layout_height="41dp"
+            android:layout_alignBaseline="@+id/user_lname"
+            android:layout_alignBottom="@+id/user_lname"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentRight="true"
+            android:ems="10"
+
+            android:inputType="textPersonName"
+            android:text="Sharma"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="59dp" />
+
+        <EditText
+            android:id="@+id/user_acc_email_edt_lbl"
+            android:layout_width="196dp"
+            android:layout_height="41dp"
+            android:layout_alignLeft="@+id/user_username"
+            android:layout_alignStart="@+id/user_username"
+
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="-13dp" />
+
+
+        <com.sa90.materialarcmenu.ArcMenu
+            android:id="@+id/Fab_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageView2"
+            app:menu_color="@color/fab_bg"
+            android:scaleY="1"
+            app:menu_open="arc_right"
+            app:menu_scr="@drawable/ic_settings_black_24dp"
+            android:layout_alignRight="@+id/user_acc_email_edt_lbl"
+            android:layout_alignEnd="@+id/user_acc_email_edt_lbl">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/password"
-                app:backgroundTint="#0fb33d" />
-        </LinearLayout>
+                android:gravity="center_vertical">
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab_item_update_account"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/updateaccount"
-            app:backgroundTint="#0fb33d" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Account"
+                    android:textColor="#000"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_item_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete_forever_black_24dp"
+                    app:backgroundTint="@color/fab_bg"
+                    app:fabSize="mini" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password"
+                    android:textColor="#000" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_item_change_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/password"
+
+                    app:backgroundTint="@color/fab_bg"
+                    app:fabSize="mini" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Account"
+                    android:textColor="#000"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_item_update_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/updateaccount"
+                    app:backgroundTint="@color/fab_bg"
+                    app:fabSize="mini" />
+            </LinearLayout>
 
 
-    </com.sa90.materialarcmenu.ArcMenu>
-
-</RelativeLayout>
+        </com.sa90.materialarcmenu.ArcMenu>
+    </RelativeLayout>
 </ScrollView>
