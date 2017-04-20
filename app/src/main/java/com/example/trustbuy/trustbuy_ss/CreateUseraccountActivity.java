@@ -23,7 +23,7 @@ public class CreateUseraccountActivity extends PostedAdscreenActivity {
 
     }
     public void AccountSignUp (View view) {
-        Intent intent = new Intent(this, UserAccountsettingsActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
     public void OnCancel (View view) {

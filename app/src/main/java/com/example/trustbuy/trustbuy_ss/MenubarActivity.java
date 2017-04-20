@@ -26,7 +26,7 @@ public class MenubarActivity extends AppCompatActivity {
 
 
         switch (item.getItemId()) {
-            // action with ID action_refresh was selected
+            // action with ID action_home was selected
             case R.id.action_home:
                 setContentView(R.layout.activity_main);
                 i = new Intent(getApplicationContext(), MainActivity.class);
@@ -39,18 +39,21 @@ public class MenubarActivity extends AppCompatActivity {
                 i = new Intent(getApplicationContext(), InboxActivity.class);
                 startActivity(i);
                 break;
+            // action with ID action_create_ad was selected
             case R.id.action_createad:
                 Toast.makeText(this, "Build your Ad", Toast.LENGTH_SHORT)
                         .show();
                 i = new Intent(getApplicationContext(), CreateAdActivity.class);
                 startActivity(i);
                 break;
+            // action with ID action_logIn /logOut was selected
             case R.id.action_signout:
                 Toast.makeText(this, "Logged out", Toast.LENGTH_SHORT)
                         .show();
                 i = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(i);
                 break;
+            // action with ID action_friend was selected
             case R.id.action_friends:
                 Toast.makeText(this, "Friend List", Toast.LENGTH_SHORT)
                         .show();
@@ -58,16 +61,24 @@ public class MenubarActivity extends AppCompatActivity {
                 startActivity(i);
                 item.setTitle("Friends");
                 break;
+            // action with ID action_watchlist was selected
             case R.id.action_watchlist:
                 Toast.makeText(this, "Watchlist", Toast.LENGTH_SHORT)
                         .show();
                  i = new Intent(getApplicationContext(), WatchlistActivity.class);
                 startActivity(i);
              break;
+            // action with ID action_history was selected
             case R.id.action_history:
                 Toast.makeText(this, "History", Toast.LENGTH_SHORT)
                         .show();
                 i = new Intent(getApplicationContext(), PersonalAdHistoryActivity.class);
+                startActivity(i);
+                break;
+            case R.id.action_search:
+            {}
+            case R.id.action_settings:
+               i = new Intent(getApplicationContext(), UserAccountsettingsActivity.class);
                 startActivity(i);
                 break;
             default:
@@ -76,5 +87,10 @@ public class MenubarActivity extends AppCompatActivity {
 
         return true;
     }
-
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+        menu.findItem(R.id.action_home).setVisible(true);
+        return true;
+    }
 }

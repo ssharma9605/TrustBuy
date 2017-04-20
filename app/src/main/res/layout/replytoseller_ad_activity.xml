@@ -11,11 +11,13 @@
         android:ems="10"
         android:inputType="textEmailSubject"
         android:text="RE:Murach PHPMySQL Textbook on Sale"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="54dp"
         android:layout_above="@+id/editText9"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/SendMessage" />
+        android:layout_toRightOf="@+id/SendMessage"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignRight="@+id/button28"
+        android:layout_alignEnd="@+id/button28" />
 
     <EditText
         android:id="@+id/editText9"

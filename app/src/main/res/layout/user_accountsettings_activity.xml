@@ -4,6 +4,7 @@
     android:layout_height="fill_parent"
     android:fillViewport="true"
     android:isScrollContainer="false"
+    android:layout_margin="16dp"
     >
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,7 +12,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
+
        >
 
 
@@ -19,23 +20,23 @@
             android:id="@+id/user_fname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/user_lname"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/user_lname"
-            android:layout_marginTop="41dp"
+            android:layout_marginTop="33dp"
             android:text="First Name"
             tools:layout_editor_absoluteX="93dp"
-            tools:layout_editor_absoluteY="35dp" />
+            tools:layout_editor_absoluteY="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/user_fname_edt_lbl"
+            android:layout_toStartOf="@+id/user_fname_edt_lbl" />
 
         <TextView
             android:id="@+id/user_lname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imageView2"
 
-            android:layout_toEndOf="@+id/imageView2"
-            android:layout_toRightOf="@+id/imageView2"
-            android:text="Last Name" />
+            android:text="Last Name"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_toLeftOf="@+id/user_lname_edt_lbl"
+            android:layout_toStartOf="@+id/user_lname_edt_lbl" />
 
         <TextView
             android:id="@+id/user_username_lbl"
@@ -53,129 +54,106 @@
             android:id="@+id/user_acc_email_lbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/user_postal_code"
-            android:layout_alignStart="@+id/user_postal_code"
-            android:layout_centerVertical="true"
 
             android:text="Email"
             tools:layout_editor_absoluteX="31dp"
-            tools:layout_editor_absoluteY="191dp" />
-
-        <TextView
-            android:id="@+id/user_province"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="191dp"
+            android:layout_below="@+id/user_lname_edt_lbl"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/user_postal_code"
-            android:layout_marginLeft="27dp"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="37dp"
-            android:text="Province"
-            tools:layout_editor_absoluteX="31dp"
-            tools:layout_editor_absoluteY="243dp" />
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="128dp" />
 
         <EditText
             android:id="@+id/user_province_ed_lbl"
             android:layout_width="196dp"
             android:layout_height="41dp"
-            android:layout_alignBottom="@+id/user_postal_code"
-            android:layout_toEndOf="@+id/user_fname"
-            android:layout_toRightOf="@+id/user_fname"
             android:ems="10"
-
+            android:text="N2T 0B5"
             android:inputType="textPostalAddress"
             tools:layout_editor_absoluteX="143dp"
-            tools:layout_editor_absoluteY="229dp" />
+            tools:layout_editor_absoluteY="229dp"
+            android:layout_alignBaseline="@+id/user_postal_code"
+            android:layout_alignBottom="@+id/user_postal_code"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <EditText
             android:id="@+id/user_fname_edt_lbl"
             android:layout_width="196dp"
             android:layout_height="41dp"
-            android:layout_alignBaseline="@+id/user_fname"
-            android:layout_alignBottom="@+id/user_fname"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Sukriti" />
-
-        <EditText
-            android:id="@+id/user_province_edt_lbl"
-            android:layout_width="53dp"
-            android:layout_height="25dp"
-            android:layout_alignLeft="@+id/user_acc_email_edt_lbl"
-            android:layout_alignStart="@+id/user_acc_email_edt_lbl"
-
-            android:layout_alignTop="@+id/user_province"
-            android:ems="10"
-
-            android:inputType="textPostalAddress"
-            tools:layout_editor_absoluteX="291dp"
-            tools:layout_editor_absoluteY="-26dp" />
+            android:text="Sukriti"
+            android:layout_alignBaseline="@+id/user_fname"
+            android:layout_alignBottom="@+id/user_fname"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <TextView
             android:id="@+id/user_username"
             android:layout_width="202dp"
             android:layout_height="30dp"
-            android:layout_above="@+id/user_acc_email_edt_lbl"
-            android:layout_marginBottom="29dp"
-            android:layout_toEndOf="@+id/user_lname"
-            android:layout_toRightOf="@+id/user_lname"
+            android:layout_marginBottom="36dp"
             android:text="ssharma9605"
             tools:layout_editor_absoluteX="142dp"
-            tools:layout_editor_absoluteY="149dp" />
+            tools:layout_editor_absoluteY="149dp"
+            android:layout_above="@+id/user_acc_email_edt_lbl"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_alignEnd="@+id/user_province"
-            android:layout_alignRight="@+id/user_province"
+            android:src="@drawable/idcard"
             android:layout_alignTop="@+id/user_fname"
-            android:src="@drawable/idcard" />
+            android:layout_alignRight="@+id/user_province"
+            android:layout_alignEnd="@+id/user_province" />
 
         <TextView
             android:id="@+id/user_postal_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/user_province"
 
-            android:layout_alignStart="@+id/user_province"
-            android:layout_below="@+id/user_acc_email_edt_lbl"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="56dp"
             android:text="Postal Code"
             tools:layout_editor_absoluteX="31dp"
-            tools:layout_editor_absoluteY="0dp" />
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_below="@+id/user_acc_email_edt_lbl"
+            android:layout_alignLeft="@+id/user_acc_email_lbl"
+            android:layout_alignStart="@+id/user_acc_email_lbl" />
 
         <EditText
             android:id="@+id/user_lname_edt_lbl"
             android:layout_width="196dp"
             android:layout_height="41dp"
-            android:layout_alignBaseline="@+id/user_lname"
-            android:layout_alignBottom="@+id/user_lname"
-            android:layout_alignParentEnd="true"
 
-            android:layout_alignParentRight="true"
             android:ems="10"
 
             android:inputType="textPersonName"
             android:text="Sharma"
             tools:layout_editor_absoluteX="179dp"
-            tools:layout_editor_absoluteY="59dp" />
+            tools:layout_editor_absoluteY="59dp"
+            android:layout_alignBaseline="@+id/user_lname"
+            android:layout_alignBottom="@+id/user_lname"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <EditText
             android:id="@+id/user_acc_email_edt_lbl"
             android:layout_width="196dp"
             android:layout_height="41dp"
-            android:layout_alignLeft="@+id/user_username"
-            android:layout_alignStart="@+id/user_username"
-
-            android:layout_centerVertical="true"
+            android:text="ssharma9605@conestogac.on.ca"
             android:ems="10"
-            android:inputType="textPostalAddress"
+            android:inputType="textEmailAddress"
             tools:layout_editor_absoluteX="140dp"
-            tools:layout_editor_absoluteY="-13dp" />
+            tools:layout_editor_absoluteY="-13dp"
+            android:layout_alignBaseline="@+id/user_acc_email_lbl"
+            android:layout_alignBottom="@+id/user_acc_email_lbl"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
 
         <com.sa90.materialarcmenu.ArcMenu

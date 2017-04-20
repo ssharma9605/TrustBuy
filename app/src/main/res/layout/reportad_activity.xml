@@ -22,12 +22,12 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView24"
         android:layout_toRightOf="@+id/textView24"
-        android:layout_toEndOf="@+id/textView24"
         android:layout_marginLeft="63dp"
         android:layout_marginStart="63dp"
         android:entries="@array/spinnerItems"
         android:drawSelectorOnTop="true"
-        />
+        android:layout_alignRight="@+id/editText5"
+        android:layout_alignEnd="@+id/editText5" />
 
     <EditText
         android:id="@+id/editText5"

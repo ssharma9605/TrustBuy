@@ -45,5 +45,20 @@
         android:icon="@drawable/ic_history_black_24dp"
         android:title="History" />
 
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:menuCategory="secondary"
+        app:showAsAction="always"
+        android:title="Search"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:menuCategory="secondary"
+        app:showAsAction="ifRoom"
+        android:title="Account Settings"/>
+
+
+
 
 </menu>

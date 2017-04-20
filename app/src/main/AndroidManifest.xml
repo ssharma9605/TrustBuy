@@ -36,7 +36,8 @@
 
         <activity android:name=".FriendsActivity" />
         <activity android:name=".UpdatePasswordactivity" />
-        <activity android:name=".CreateUseraccountActivity" />
+        <activity android:name=".CreateUseraccountActivity"
+            />
 
         <activity android:name=".CreateAdActivity"/>
         <activity android:name=".PostedAdscreenActivity"/>

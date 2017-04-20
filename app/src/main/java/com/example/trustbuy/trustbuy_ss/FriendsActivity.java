@@ -5,9 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-/**
- * Created by PC User on 2017-04-08.
- */
+
 
 public class FriendsActivity extends UserAccountsettingsActivity {
     private Button btn;
@@ -35,5 +33,6 @@ public class FriendsActivity extends UserAccountsettingsActivity {
                 .show();
         v.setEnabled(false);
     }
+
     }
 
